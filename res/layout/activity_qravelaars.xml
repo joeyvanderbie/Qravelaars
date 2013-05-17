@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:background="#154ba3" >
+<RelativeLayout
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:background="#154ba3" 
+    android:id="@+id/splash">
+    <TextView
+        android:id="@+id/h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="#F3B714"
+        android:textSize="38sp"
+        android:textStyle="bold" 
+        android:layout_centerInParent="true"/>
+     <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_author"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:padding="10sp"
+        android:layout_below="@id/h1"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
+
+<WebView
+    android:id="@+id/webview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="gone"
+       android:background="#154ba3" 
+/>
+</RelativeLayout>
